@@ -65,7 +65,7 @@ public class MainActivity extends AppCompatActivity {
 
 
     /**
-     * 内部类获取左侧数据方法
+     * 内部类获取左侧数据类
      */
     class LeftDataCall implements DataCall<Result<List<LeftBean>>> {
 
