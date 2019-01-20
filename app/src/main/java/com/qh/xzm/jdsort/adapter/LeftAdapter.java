@@ -74,6 +74,7 @@ public class LeftAdapter extends RecyclerView.Adapter<LeftAdapter.MyViewHolder> 
     }
 
 
+    //接口回调
     private LeftCheckListener mLeftCheckListener;
 
     public void setLeftCheckListener(LeftCheckListener leftCheckListener) {

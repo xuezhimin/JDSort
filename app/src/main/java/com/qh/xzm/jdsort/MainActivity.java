@@ -100,15 +100,9 @@ public class MainActivity extends AppCompatActivity {
                 leftAdapter.setLeftCheckListener(new LeftAdapter.LeftCheckListener() {
                     @Override
                     public void onItemClick(int position) {
-                        for (int i = 0; i < leftBeanList.size(); i++) {
-                            //默认选中第一个
-                            leftBeanList.get(i).setClick(true);
-                            //获取每次点击的 cid
-                            int cid = leftBeanList.get(position).getCid();
-                            //每次点击获取cid 传给相应的接口相应
-                            rightPresenter.request(cid);
-                        }
-                        //刷新适配器
+                        //获取cid传值给右侧
+                        int cid = leftBeanList.get(position).getCid();
+                        rightPresenter.request(cid);
                         rightAdapter.notifyDataSetChanged();
                     }
                 });
